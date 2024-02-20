@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex {
+    /* 縦方向のグラデーションを設定し、ストライプ幅を広げる */
+    background-image: repeating-linear-gradient(
+        90deg,
+        #ff4500,
+        #ff4500 50px, /* ストライプの幅を広げる */
+        #ff6347 50px,
+        #ff6347 100px /* ストライプの幅を広げる */
+    );
+    height: 100vh; /* 画面の全高さをカバー */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    display: flex; /* Flexコンテナとして設定 */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    width: 100vw; /* フルビューポート幅 */
+    background: transparent; /* 背景を透明に設定 */
+}
+
+.form-content {
+    width: 100%; /* コンテンツ幅を親要素に合わせる */
+    max-width: 400px; /* 最大幅を設定 */
+    padding: 20px;
+    background: #fff; /* 背景色 */
+}
